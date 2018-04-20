@@ -34,7 +34,7 @@ class FormularioAutor extends Component {
                 }
             },
             beforeSend: () => {
-                PubSub.publish('limpa-erros', {});  
+                PubSub.publish('limpa-erros', {});
             }
         });
     }
@@ -119,8 +119,13 @@ class AutorBox extends Component {
     render() {
         return (
             <div>
-                <FormularioAutor />
-                <TabelaAutores lista={this.state.lista} />
+                <div className="header">
+                    <h1>Cadastro de autores</h1>
+                </div>
+                <div className="content" id="content">
+                    <FormularioAutor />
+                    <TabelaAutores lista={this.state.lista} />
+                </div>
             </div>
         )
     }
