@@ -127,7 +127,7 @@ class AutorBox extends Component {
                     <TabelaAutores lista={this.state.lista} />
                 </div>
             </div>
-        )
+        );
     }
 }
 

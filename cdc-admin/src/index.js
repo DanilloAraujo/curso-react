@@ -6,6 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import AutorBox from './Autor';
 import Home from './Home';
+import LivroBox from './Livro';
 
 ReactDOM.render(
     (<Router>
@@ -13,7 +14,7 @@ ReactDOM.render(
             <Route path="/" component={App} />
             <Route exact path="/" component={Home} />
             <Route path="/autor" component={AutorBox} />
-            <Route path="/livro" />
+            <Route path="/livro" component={LivroBox} />
         </div>
     </Router>),
     document.getElementById('root')
